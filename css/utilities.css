@@ -2,6 +2,42 @@
 .text-primary {
     color: #e5b365;
 }
+.container {
+    margin-left: 100px;
+    margin: auto;   
+    width: 1100px;
+    overflow: auto;
+    padding: 50px 20px;
+  }
+  /* About Info */
+#about-info h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: #ccc solid 1px;
+}
+
+#about-info .info-right {
+    float: right;
+    width: 50%;
+    min-height: 100%;
+  }
+  #about-info .info-right img {
+    display: block;
+    width: 55%;
+    border-radius: 50%;
+    margin-top: 23px;
+    margin-left: 200px;
+    
+
+  }
+  
+  #about-info .info-left {
+    float: left;
+    width: 50%;
+    min-height: 100%;
+    padding-top: 60px;
+  }
 
 .text-secondary {
     color: #4a7381  ;
@@ -56,6 +92,7 @@
     justify-content: center;
     text-align: center;
     height: 100%;
+    margin:0 100px;
 }
 
 .flex-items > div {

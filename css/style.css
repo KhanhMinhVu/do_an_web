@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
-
+.flex {
+    display: flex;
+}
+.m-1 {
+    margin:0 100px;
+}
 * {
     box-sizing: border-box;
     padding: 0;
@@ -182,6 +187,9 @@ img {
 .post {
     padding: 50px 30px;
 }
+.post .float-right {
+    float:right;
+}
 
 .post h2 {
     font-size: 40px;
@@ -195,7 +203,7 @@ img {
 }
 
 .post img {
-    width: 300px;
+    width: 400px;
     border-radius: 50%;
     display: block;
     margin: 0 auto 30px;
@@ -253,4 +261,12 @@ img {
     .team img {
         width: 70%;
     }
+    .post img {
+        width: 300px;
+
+    }
+    .m-1 {
+        margin: 0 0;
+    }
+    
 }

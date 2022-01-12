@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/utilities.css"/>
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Tắm khoáng</title>
+  </head>
+  <body id="home">
+    <header class="hero blog">
+      <div id="navbar" class="navbar top">
+        <h1 class="logo">
+          <span class="text-primary"><i class="fas fa-book-open"></i> Edge</span
+          >Onsen
+        </h1>
+        <nav>
+          <ul>
+            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="index.html#about">Giới thiệu</a></li>
+            <li><a href="index.html#cases">Thư viện</a></li>
+            <li><a href="index.html#blog">Dịch vụ</a></li>
+            <li><a href="index.html#contact">Đặt lịch</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="content">
+        <h1>Tắm khoáng</h1>
+      </div>
+    </header>
+
+    <main class="">
+      <section class="post bg-light-img ">
+        <div class="m-1">
+          <h2>Bể tắm Đào Viên</h2>
+        <img src="images/be_tam_1.jpg" alt="" />
+        <p>
+          Bể tắm đào viên được đặt ở không gian ngoài trời. Để tạo sự đặc biệt và độc đáo, thêm vào bể những loại quả theo mùa như chanh, bưởi, cam,... Vào những ngày thời tiết dịu nhẹ kèm mưa lây phây, thật lãng mạn và sảng khoái khi ngâm mình trong Bể Đào viên mà nhìn ngắm vẻ đẹp xanh mướt của núi rừng.
+        </p>
+        </div>
+      </section>
+      
+      <section class="post bg-light-img ">
+        <div class="m-1">
+          <h2>Bể tắm chum</h2>
+        <img src="images/be_tam_2.jpg" alt="" />
+        <p>
+          Bể tắm chung mang lại không gian thư giã riêng tư ở khu Public. Trải nghiệm tắm onsen giữa thiên nhiên là một cách tuyệt vời để tái tạo làn da mới.
+        </p>
+        </div>
+      </section>
+
+      <section class="post bg-light-img ">
+        <div class="m-1">
+          <h2>Bể tắm Đá</h2>
+        <img src="images/be_tam_3.jpg" alt="" />
+        <p>
+          Thiết kế bể tắm đá được lấy cảm hứng từ thiên nhiên hoang dã mang lại cảm giác thư thái như trở về với tự nhiên yên bình và trong trẻo. Dòng nước khoáng nóng Quang Hanh mang lại sự thư giãn, giảm căng thẳng và mệt mỏi.
+        </p>
+        </div>
+      </section>
+
+      <section class="post bg-light-img ">
+        <div class="m-1">
+          <h2>Bể tắm Hang</h2>
+        <img src="images/be_tam_4.jpg" alt="" />
+        <p>
+          Bể tắm hang được lấy cảm hứng thiết kế từ hình dạng hang động trong tự nhiên và mang phong cách kỳ bí. Quý khách có thể tận hưởng trải nghiệm tắm khoáng duy nhất này tại Yoko Onsen. Do kết cấu của hang đá nên bể tắm hang có thể giữ được nhiệt độ tốt cao nên hãy cẩn trọng khi bước vào bể.
+        </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer bg-dark">
+      <div class="social">
+        <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+        <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+        <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
+        <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+      </div>
+      <p>Copyright &copy; 2022 - EdgeOnsen</p>
+    </footer>
+
+    <script>
+      const navbar = document.getElementById('navbar');
+      let scrolled = false;
+
+      window.onscroll = function () {
+        if (window.pageYOffset > 100) {
+          navbar.classList.remove('top');
+          if (!scrolled) {
+            navbar.style.transform = 'translateY(-70px)';
+          }
+          setTimeout(function () {
+            navbar.style.transform = 'translateY(0)';
+            scrolled = true;
+          }, 200);
+        } else {
+          navbar.classList.add('top');
+          scrolled = false;
+        }
+      };
+    </script>
+  </body>
+</html>

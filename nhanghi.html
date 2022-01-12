@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/utilities.css"/>
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Ở lại cùng chúng tôi</title>
+  </head>
+  <body id="home">
+    <header class="hero blog">
+      <div id="navbar" class="navbar top">
+        <h1 class="logo">
+          <span class="text-primary"><i class="fas fa-book-open"></i> Edge</span
+          >Onsen
+        </h1>
+        <nav>
+          <ul>
+            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="index.html#about">Giới thiệu</a></li>
+            <li><a href="index.html#cases">Thư viện</a></li>
+            <li><a href="index.html#blog">Dịch vụ</a></li>
+            <li><a href="index.html#contact">Đặt lịch</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="content">
+        <h1>Ở lại cùng chúng tôi</h1>
+      </div>
+    </header>
+
+    <main>
+      <section class="post bg-light-img ">
+        <div class="m-1">
+          <h2>Nhà nghỉ theo giờ</h2>
+          <img src="images/theo_gio.jpg" alt="" />
+          <p>
+            Với thiết kế theo lối kiến trúc truyền thống Nhật Bản cùng phòng tắm và khu vực xông hơi riêng, bạn sẽ có một không gian thư thái trong căn phòng Washitsu 40m2.Căn phòng này phù hợp cho mọi nhu cầu nghỉ dưỡng dù bạn đi nghỉ cá nhân hay cùng gia đình.Cùng tận hưởng không gian onsen có một không hai này với trà, café, hoa quả tươi và bánh mochi tuyệt hảo.Bên cạnh đó wifi internet tốc độ cao cùng với các ứng dụng giải trí hiện đại như Smart TV cũng sẽ tối đa hóa trải nghiệm hoàn hảo của bạn và gia đình. Hãy đến đắm mình trong sự hài hòa, tĩnh lặng khỏi bộn bề cuộc sống. Thoát khỏi sự hỗn loạn hàng ngày, nghỉ ngơi và thư giãn trong giây lát khi bạn đặt phòng Washitsu Nhật Bản tuyệt đẹp và đích thực của chúng tôi trong thời gian lên đến 6 giờ tại Yoko Onsen. Thiên đường của riêng bạn.
+          </p>
+        </div>
+        
+      </section>
+
+
+      <section class="post bg-light-img ">
+        <div class="m-1">
+          <h2>Nhà nghỉ qua đêm</h2>
+          <img src="images/qua_dem.jpg" alt="" />
+          <p>
+            Khám phá sự tiện nghi sang trọng và lợi ích của việc tắm onsen riêng và được bao quanh bởi vẻ đẹp tự nhiên tuyệt đẹp, khi bạn thư giãn trong căn washitsu rộng 40 m2 này. Với 2 bể tắm riêng và phòng xông hơi được thiết kế để cung cấp cho các cặp đôi hoặc gia đình những trải nghiệm sang trọng. Thưởng thức trái cây và bánh mochi chào đón ngon lành khi check-in. Truy cập các tiện nghi của công nghệ hiện đại bao gồm wifi tốc độ cao và Smart TV, cùng với bộ ấm pha trà & cà phê. Đây là sự lựa chọn hoàn hảo cho một nơi nghỉ ngơi thư giãn cho các gia đình. Khi bạn đặt một phòng nghỉ qua đêm tại Yoko Onsen bạn sẽ được thư giãn và cảm thấy sáng khoải, tươi trẻ với không gian riêng tư của Washitsu. Chào đón bình minh trong khi bạn ngâm mình trong suối nước nóng ngoài trời riêng tư và tận hưởng buổi tối với đồ ăn nhẹ miễn phí (Kyusu).
+  
+  
+          </p>
+        </div>
+        
+      </section>
+
+    </main>
+
+    <footer class="footer bg-dark">
+      <div class="social">
+        <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+        <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+        <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
+        <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+      </div>
+      <p>Copyright &copy; 2022 - EdgeOnsen</p>
+    </footer>
+
+    <script>
+      const navbar = document.getElementById('navbar');
+      let scrolled = false;
+
+      window.onscroll = function () {
+        if (window.pageYOffset > 100) {
+          navbar.classList.remove('top');
+          if (!scrolled) {
+            navbar.style.transform = 'translateY(-70px)';
+          }
+          setTimeout(function () {
+            navbar.style.transform = 'translateY(0)';
+            scrolled = true;
+          }, 200);
+        } else {
+          navbar.classList.add('top');
+          scrolled = false;
+        }
+      };
+    </script>
+  </body>
+</html>
