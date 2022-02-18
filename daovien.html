@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/utilities.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Ẩm thực</title>
+  </head>
+  <body id="home">
+    <header class="hero blog">
+      <div id="navbar" class="navbar top">
+        <h1 class="logo">
+          <span class="text-primary"><i class="fas fa-book-open"></i> Edge</span
+          >Onsen
+        </h1>
+        <nav>
+          <ul>
+            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="index.html#about">Giới thiệu</a></li>
+            <li><a href="index.html#cases">Thư viện</a></li>
+            <li><a href="index.html#blog">Dịch vụ</a></li>
+            <li><a href="index.html#contact">Đặt lịch</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="content">
+        <h1>Tắm Khoáng</h1>
+      </div>
+    </header>
+
+    <main>
+      <section class="post bg-light-img ">
+        <div class="m-1">
+          <h2>Bể tắm Đào Viên</h2>
+          <img src="images/dao-vien.jpg" alt="" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis aspernatur incidunt officiis, molestias quis a, obcaecati saepe laborum maxime animi, in laudantium nobis? Similique expedita hic perspiciatis consectetur rem temporibus sint non obcaecati perferendis, libero beatae magni exercitationem, ad reiciendis vel dicta ab totam, blanditiis maiores tempora! Reprehenderit asperiores consectetur reiciendis perspiciatis animi magni sequi sed mollitia porro! Officia cupiditate repellat eum nesciunt quisquam. At unde accusantium similique natus magnam vitae aliquid hic quas maiores incidunt id quos, quisquam atque sunt! Rem temporibus vel alias perspiciatis recusandae reprehenderit sapiente culpa iste ut? Repudiandae, atque ipsam. Enim itaque ullam in dolorem, animi molestias asperiores neque, dolores, accusamus hic voluptatibus suscipit unde. Aliquam vero a veritatis, ullam recusandae itaque soluta sit, quo, asperiores voluptates sed fugiat nisi cum modi atque praesentium! Sapiente ipsam animi, deserunt inventore qui exercitationem tempore laboriosam veniam autem at minima quibusdam perspiciatis eum sit optio magnam et nostrum? Fugiat, saepe error eos sunt architecto similique delectus ratione totam eaque officiis itaque quod quasi earum rerum doloremque perspiciatis placeat adipisci omnis dolorum voluptatum facilis vitae asperiores quae. Officia sunt provident debitis tempore? Sunt excepturi eligendi non repellat unde? Molestias, excepturi voluptates. Exercitationem harum deleniti deserunt consequuntur dignissimos, aliquid ipsam!
+          </p>
+        </div>
+        
+      </section>
+
+    </main>
+
+    <footer class="footer bg-dark">
+      <div class="social">
+        <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+        <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+        <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
+        <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+      </div>
+      <p>Copyright &copy; 2022 - EdgeOnsen</p>
+    </footer>
+
+    <script>
+      const navbar = document.getElementById('navbar');
+      let scrolled = false;
+
+      window.onscroll = function () {
+        if (window.pageYOffset > 100) {
+          navbar.classList.remove('top');
+          if (!scrolled) {
+            navbar.style.transform = 'translateY(-70px)';
+          }
+          setTimeout(function () {
+            navbar.style.transform = 'translateY(0)';
+            scrolled = true;
+          }, 200);
+        } else {
+          navbar.classList.add('top');
+          scrolled = false;
+        }
+      };
+    </script>
+  </body>
+</html>
